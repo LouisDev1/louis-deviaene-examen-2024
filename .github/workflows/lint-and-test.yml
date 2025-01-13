@@ -12,6 +12,10 @@ jobs:
   lint-and-test:
     runs-on: ubuntu-latest
 
+    defaults:
+      run:
+        working-directory: backend  # ✅ Set working directory globally
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -21,20 +25,11 @@ jobs:
         with:
           node-version: '18'
 
-      - name: Change directory to backend
-        run: cd backend  # ✅ Explicitly change directory
-
       - name: Install dependencies
-        run: |
-          cd backend  # ✅ Explicitly change directory
-          npm install
+        run: npm install  # ✅ Correct path is already set
 
       - name: Run ESLint
-        run: |
-          cd backend  # ✅ Explicitly change directory
-          npx eslint .
+        run: npx eslint .
 
       - name: Run Tests
-        run: |
-          cd backend  # ✅ Explicitly change directory
-          npm run test
+        run: npm run test
