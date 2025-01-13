@@ -109,11 +109,5 @@ DB_URI=mongodb://localhost:27017/app
 
 ---
 
-## 📞 Contact
-
-For any questions or issues, please contact **louisdev1** via GitHub.
-
----
-
 **End of README**
 

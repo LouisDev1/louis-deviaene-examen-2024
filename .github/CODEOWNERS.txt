@@ -1,0 +1,11 @@
+# Set the repository owner as the default code owner for all files
+* @louisdev1
+
+# Backend-specific code owner
+/backend/ @louisdev1
+
+# Frontend-specific code owner
+/frontend/ @louisdev1
+
+# Workflow files owner
+/.github/workflows/ @louisdev1

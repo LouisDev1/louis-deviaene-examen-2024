@@ -1,0 +1,5 @@
+2025-01-12T18:41:12.243Z [INFO]: Server running at http://0.0.0.0:3000/
+2025-01-13 19:22:54 [[32minfo[39m]: Server is starting...
+2025-01-13 19:22:54 [[33mwarn[39m]: This is a warning log
+2025-01-13 19:22:54 [[31merror[39m]: This is an error log
+2025-01-13 19:22:54 [[32minfo[39m]: Server running on port 3000
