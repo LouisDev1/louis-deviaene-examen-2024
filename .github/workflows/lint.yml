@@ -17,8 +17,12 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-        working-directory: ./backend  # Ensure this is correct!
+        working-directory: ./backend
+
+      - name: Install ESLint
+        run: npm install eslint --save-dev
+        working-directory: ./backend
 
       - name: Run ESLint
         run: npx eslint .
-        working-directory: ./backend  # Ensure this is correct!
+        working-directory: ./backend

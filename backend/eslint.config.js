@@ -1,18 +1,13 @@
-import eslintPluginJest from 'eslint-plugin-jest';
-
 export default [
   {
-    files: ['**/*.js'],
+    files: ["**/*.js"],
     languageOptions: {
       ecmaVersion: 2021,
-      sourceType: 'module',
-    },
-    plugins: {
-      jest: eslintPluginJest,
+      sourceType: "module",
     },
     rules: {
-      'no-unused-vars': 'warn',
-      'no-undef': 'off',
+      "no-unused-vars": "warn",
+      "no-undef": "off",
     },
   },
 ];
