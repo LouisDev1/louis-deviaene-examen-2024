@@ -23,12 +23,12 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-        working-directory: ./backend  # ✅ Corrected the directory
+        working-directory: backend  # ✅ Corrected path
 
       - name: Run ESLint
         run: npx eslint .
-        working-directory: ./backend  # ✅ Corrected the directory
+        working-directory: backend  # ✅ Corrected path
 
       - name: Run Tests
         run: npm run test
-        working-directory: ./backend  # ✅ Corrected the directory
+        working-directory: backend  # ✅ Corrected path
