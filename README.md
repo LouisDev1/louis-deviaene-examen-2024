@@ -19,8 +19,16 @@ docker-compose up --build
 ```
 
 ### 3. **Run the Application (Production)**
+
+I struggled with getting it to run with only command, I really tried but the npm install and npm run would just not work. This is why I went with the safer and working option of uploading it in simple but a little more steps while trying to stay as close to the task as possible.
+
 ```bash
-docker-compose -f docker-compose.prod.yml up --build
+cd frontend
+npm install
+npm run serve
+
+
+docker-compose up --build backend
 ```
 
 ### 4. **Access the Application**
