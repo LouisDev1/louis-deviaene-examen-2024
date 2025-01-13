@@ -21,14 +21,20 @@ jobs:
         with:
           node-version: '18'
 
+      - name: Change directory to backend
+        run: cd backend  # ✅ Explicitly change directory
+
       - name: Install dependencies
-        run: npm install
-        working-directory: backend  # ✅ Corrected path
+        run: |
+          cd backend  # ✅ Explicitly change directory
+          npm install
 
       - name: Run ESLint
-        run: npx eslint .
-        working-directory: backend  # ✅ Corrected path
+        run: |
+          cd backend  # ✅ Explicitly change directory
+          npx eslint .
 
       - name: Run Tests
-        run: npm run test
-        working-directory: backend  # ✅ Corrected path
+        run: |
+          cd backend  # ✅ Explicitly change directory
+          npm run test
