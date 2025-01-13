@@ -19,12 +19,12 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: '18'
 
       - name: Install dependencies
         run: npm install
-        working-directory: ./backend
+        working-directory: ./backend  # Corrected path
 
       - name: Run tests
         run: npm run test
-        working-directory: ./backend
+        working-directory: ./backend  # Corrected path
